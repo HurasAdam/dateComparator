@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Orbitron&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
 body{
     height: 100vh;
    margin-left: auto;
@@ -43,6 +54,8 @@ body{
     position: absolute;
     font-size: 18px;
     bottom: 30%;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
 }
 
 .isLeapInput{
@@ -81,7 +94,7 @@ cursor: pointer;
 }
 #compareDateButton:hover{
     background-color: rgb(11, 149, 159);
-transition: 0.4s;
+transition: 0.5s;
 }
 
 .btnBox{
@@ -96,10 +109,11 @@ transition: 0.4s;
     width: 70px;
 border-radius: 19px;
 cursor: pointer;
+
 }
 .resetBtn:hover{
     background-color: rgb(11, 149, 159);
-    transition: 0.4s; 
+    transition: 0.5s; 
 }
 #desc{
     display: block;
@@ -107,3 +121,14 @@ cursor: pointer;
 
 }
 
+.display{
+    position: absolute;
+    top:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    color:rgba(200, 141, 15, 0.917);
+    font-family: 'Orbitron', sans-serif;
+}
