@@ -45,15 +45,18 @@ function isLeap(){
     const month_2= parseInt(document.querySelector('#month_2').value);
     const year_2= parseInt(document.querySelector('#year_2').value);
     const resultBox=document.querySelector('#resultBox');
+    const LeapInput = document.querySelector('.isLeapInput');
     
+    LeapInput.value='';
    if(year%4===0 &&year%100!==0){
-    return resultBox.textContent= `rok: ${year} jest rokiem przestępnym`
+    
+    resultBox.textContent= `rok: ${year} jest rokiem przestępnym`
  }
  else if(year%4!==0){
-    return resultBox.textContent= `rok: ${year} nie jest rokiem przestępnym`
+     resultBox.textContent= `rok: ${year} nie jest rokiem przestępnym`
  }
 else{
-    console.log('podaj rok')
+    resultBox.textContent= 'Podaj rok'   
 }
 }
 isLeapBtn.addEventListener('click',isLeap);
